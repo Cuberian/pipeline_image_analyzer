@@ -1,28 +1,34 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="green"
+      dark
+    >
+      <span class="mr-2 text-h4">PIPELINE IMAGE ANALYZER</span>
+    </v-app-bar>
+
+    <v-main class="mt-6">
+      <v-card
+        elevation="0"
+        width="30vw"
+        height="75vh"
+        style="border: 1px solid gray; margin-left: 50px">
+        <v-card-title>
+          Фильтры:
+        </v-card-title>
+        <hr/>
+      </v-card>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  data: () => ({
+    //
+  }),
+};
+</script>
